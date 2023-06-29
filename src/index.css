@@ -1,0 +1,92 @@
+*{padding:0; margin:0;
+font-family: 'Work Sans', sans-serif;}
+
+/*  FUNDO  */
+
+body{display: flex;
+justify-content: center;
+background-color: rgba(244, 244, 244, 0.518);}
+
+#calculadora{background-color: rgba(244, 244, 244, 0.518);
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.133);
+margin: 20px; border-radius: 30px;
+padding: 25px; width: 280px;
+margin-top: 30px;}
+
+/*  HEADER  */
+
+#menu{display: flex;
+flex-flow: row nowrap;
+justify-content: space-between}
+
+#horario{font-weight: 600;
+font-size: 14px;}
+
+img{width: 13px;}
+
+
+/* CALCULADORA  */
+
+#resumoConta{padding-bottom: 5px;
+margin-right: 7px; height: 10px;}
+
+#calculo{text-align: end;
+margin-top: 30px; margin-bottom: 30px;
+font-size: 14px;}
+
+#resultado{font-size: 60px;}
+
+/*BOTÕES*/
+
+#operacoes{display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-template-areas: 
+"c p1 p2 divisao"
+"sete oito nove multi"
+"quatro cinco seis diminuir"
+"tres dois um somar"
+"zerar zerar ponto igual";
+justify-items: center;}
+
+.conta{width: 50px;
+margin-bottom: 10px;
+font-size: 20px; font-weight: 400;
+padding: 15px; border-radius: 20px;
+border: thin solid rgba(0, 0, 0, 0.13);}
+
+.conta:hover{background-color: rgba(240, 248, 255, 0.063);}
+
+.zero{max-width: auto;
+width: 90%;}
+
+.operador{background-color: #ffa500;
+border: none;}
+.operador:hover{background-color: rgba(255, 166, 0, 0.927);}
+
+.igual{background-color: rgb(173, 255, 47);}
+.igual:hover{background-color: rgba(172, 255, 47, 0.845);}
+
+.c{background-color: #ea8989;
+border: none;}
+.c:hover{background-color: rgba(234, 137, 137, 0.821);}
+
+#c{grid-area: c;}
+#parentese01{grid-area: p1;}
+#parentese02{grid-area: p2;}
+#divisao{grid-area: divisao;}
+#sete{grid-area:sete;}
+#oito{grid-area:oito;}
+#nove{grid-area:nove;}
+#multiplicacao{grid-area: multi;}
+#quatro{grid-area:quatro;}
+#cinco{grid-area:cinco;}
+#seis{grid-area:seis;}
+#diminuir{grid-area: diminuir;}
+#tres{grid-area:tres;}
+#dois{grid-area:dois;}
+#um{grid-area:um;}
+#somar{grid-area: somar;}
+#zero{grid-area:zerar;}
+#ponto{grid-area: ponto;}
+#igual{grid-area: igual;}

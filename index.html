@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/src/img/calculadora.png" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="calculadora">
+        <section id="menu">
+            <p id="horario">00:00</p>
+            <div id="imgs">
+                <img src="/src/img/sinal-de-rede.png" alt="Sinal de rede">
+                <img src="/src/img/meia-bateria.png" alt="Meia bateria">
+            </div>
+        </section>
+        <section id="calculo">
+            <p id="resumoConta"></p>
+            <p id="resultado">0</p>
+        </section>
+        <section id="operacoes">
+            <button id="C" class="conta c">C</button>
+            <button id="parentese01" class="conta zerar" onclick="adicionar('(')">(</button>
+            <button id="parente02" class="conta" onclick="adicionar(')')">)</button>
+            <button id="divisao" class="conta operador" onclick="adicionar('/')">/</button>
+            <button id="sete" class="conta" onclick="adicionar(7)">7</button>
+            <button id="oito" class="conta" onclick="adicionar(8)">8</button>
+            <button id="nove" class="conta" onclick="adicionar(9)">9</button>
+            <button id="multiplicacao" class="conta operador" onclick="adicionar('*')">x</button>
+            <button id="quatro" class="conta" onclick="adicionar(4)">4</button>
+            <button id="cinco" class="conta" onclick="adicionar(5)">5</button>
+            <button id="seis" class="conta" onclick="adicionar(6)">6</button>
+            <button id="diminuir" class="conta operador" onclick="adicionar('-')">-</button>
+            <button id="um" class="conta" onclick="adicionar(1)">1</button>
+            <button id="dois" class="conta" onclick="adicionar(2)">2</button>
+            <button id="tres" class="conta" onclick="adicionar(3)">3</button>
+            <button id="somar" class="conta operador" onclick="adicionar('+')">+</button>
+            <button id="zero" class="conta zero" onclick="adicionar(0)">0</button>
+            <button id="ponto" class="conta" onclick="adicionar('.')">.</button>
+            <button id="igual" class="conta igual">=</button>
+        </section>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+</html>
